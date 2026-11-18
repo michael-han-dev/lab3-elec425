@@ -14,4 +14,4 @@ def activation_gradient(y):
     #  (3) you need to save your result in a vector "gradient" 
     #      which has the same size as y.
 
-    return (finish this line of code)
+    return y * (1 - y)

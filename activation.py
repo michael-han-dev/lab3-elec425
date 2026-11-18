@@ -12,4 +12,4 @@ def activation(alpha):
     #in only one line!!
 
 
-    return (finish this line of code)
+    return 1 / (1 + np.exp(-alpha))

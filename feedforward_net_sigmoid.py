@@ -89,7 +89,7 @@ for epoch in range(1, 551):
         
         # add some code below
         # to calculate gradients of error w.r.t. alpha_2 (see defination of alpha_2 in the figure of the handout)
-	layer2_alpha_gradient = (finish this line of code)
+        layer2_alpha_gradient = layer2_h_gradient * activation_gradient(layer2_h)
 
         # calculate gradients w.r.t. W2 and h1 (see defination of W3 and h2 in the figure of the handout) 
                 
@@ -97,7 +97,7 @@ for epoch in range(1, 551):
 
         # add some code below
         # to calculate gradients of error w.r.t. alpha_1 (see defination of alpha_1 in the figure of the handout)
-        layer1_alpha_gradient = (finish this line of code)
+        layer1_alpha_gradient = layer1_h_gradient * activation_gradient(layer1_h)
 
         # calculate gradients w.r.t. W1 and X (see defination of W1 in the figure of the handout) 
         W1_gradient, _ = compute_gradient_for_weights_and_one_layer_below(layer1_alpha_gradient, W1, X)
